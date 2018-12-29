@@ -7,8 +7,6 @@ class Base64Tests(unittest.TestCase):
     def test_isupper(self):
         self.assertTrue('FOOL'.isupper())
 
-    def test_base64(self):
-        self.assertTrue(5 > 4)
     def test_hello(self):
         proc = subprocess.Popen("python base64-keystrings.py -f plain.txt", stdout=subprocess.PIPE, shell=True)
         (out,err) = proc.communicate()
